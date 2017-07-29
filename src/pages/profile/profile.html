@@ -1,17 +1,53 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
-  </ion-navbar>
+  <ion-toolbar center text-center>
+    <img src="/assets/logo/kotakata_378.png"
+         style="height: 1.5em" />
+  </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+<ion-content>
+  <ion-row>
+    <ion-col>
+      <ion-item style="text-align: center">
+        <ion-avatar style="display: inline;">
+          <img src="/assets/img/rebecca.jpg" 
+               style="width: 5em; height: 5em; display: inline;">
+        </ion-avatar>
+        <h2 style="font-weight: bolder; font-size: 1.25em;">Rebecca Williams</h2>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col class="bio-number-bar">
+      <div class="bio-number-desc">Posts</div>
+      <div class="bio-number">70</div>
+    </ion-col>
+
+    <ion-col class="bio-number-bar">
+      <div class="bio-number-desc">Followers</div>
+      <div class="bio-number">2.3k</div>
+    </ion-col>
+
+    <ion-col class="bio-number-bar">
+      <div class="bio-number-desc">Following</div>
+      <div class="bio-number">240</div>
+    </ion-col>
+
+    <ion-col class="bio-number-bar">
+      <div class="bio-number-desc">Honors</div>
+      <div class="bio-number">50</div>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-list>
+      <ion-row *ngFor="let row of grids; let i = index"
+               style="padding: 0">
+        <ion-col *ngFor="let col of row; let j = index"
+                 style="padding: 0px 1px">
+          <img src={{col.url}} />
+        </ion-col>
+      </ion-row>
+    </ion-list>
+  </ion-row>
 </ion-content>
