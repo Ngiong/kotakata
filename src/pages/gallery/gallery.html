@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-row>
+      <ion-col><ion-icon name="arrow-back" style="font-size: 2em;"></ion-icon></ion-col>
+      <ion-col center text-center><ion-title>IMAGE PICKER</ion-title></ion-col>
+      <ion-col right text-right>NEXT</ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-row *ngFor="let row of grids; let i = index">
+      <ion-col *ngFor="let col of row; let j = index">
+        <img src={{col.url}} (click)="handleToggle(i, j)"/>
+        <img src="/assets/img/gallery/checked.png" *ngIf="col.checked"
+             style="position: absolute; top: 0; right: 0; left: 0;"/>
+      </ion-col>
+    </ion-row>
+  </ion-list>
+</ion-content>

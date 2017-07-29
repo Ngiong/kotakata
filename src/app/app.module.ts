@@ -5,6 +5,7 @@ import { MyApp } from './app.component';
 
 import { HomePage } from '../pages/home/home';
 import { ExplorePage } from '../pages/explore/explore'
+import { GalleryPage } from '../pages/gallery/gallery'
 import { JournalPage } from '../pages/journal/journal'
 import { ProfilePage } from '../pages/profile/profile'
 import { TabsPage } from '../pages/tabs/tabs';
@@ -20,7 +21,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     JournalPage,
     ProfilePage,
     TabsPage,
-    
+    GalleryPage
   ],
   imports: [
     BrowserModule,
@@ -33,7 +34,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ExplorePage,
     JournalPage,
     ProfilePage,
-    TabsPage
+    TabsPage,
+    GalleryPage
   ],
   providers: [
     StatusBar,
