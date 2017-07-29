@@ -48,13 +48,17 @@ export class TabsPage {
           cssClass: 'share-button',
           handler: () => {
             this.navController.push(GalleryPage, {
-              photos: photos
+              photos: photos,
+              share: true
             })
           }
         },{
           cssClass: 'sell-button',
           handler: () => {
-            this.navController.push(GalleryPage)
+            this.navController.push(GalleryPage, {
+              photos: photos,
+              share: false
+            })
           }
         }
       ],

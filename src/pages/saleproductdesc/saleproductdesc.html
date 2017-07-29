@@ -1,0 +1,88 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-row>
+      <ion-col (click)="handleBack()"><ion-icon name="arrow-back" style="font-size: 2em;"></ion-icon></ion-col>
+      <ion-col center text-center><ion-title>PRODUCT DESCRIPTION</ion-title></ion-col>
+      <ion-col right text-right style="color: #CAB95E">NEXT</ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row>
+    <ion-col style="text-align: center; background-color: black;">
+      <img src="{{ url }}" style="width: 60%;" />
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-item>
+        <ion-label floating>Title</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-item>
+        <ion-label floating>Price</ion-label>
+        <ion-input type="number"></ion-input>
+      </ion-item>
+    </ion-col>
+    <ion-col>
+      <ion-item>
+        <ion-label floating>Condition</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-item>
+        <ion-label floating>Location</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-item>
+        <ion-label type="number" floating>Card Number</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-item>
+        <ion-label floating>Month</ion-label>
+        <ion-select>
+          <ion-option>01</ion-option>
+          <ion-option>02</ion-option>
+          <ion-option>03</ion-option>
+          <ion-option>04</ion-option>
+          <ion-option>05</ion-option>
+          <ion-option>06</ion-option>
+          <ion-option>07</ion-option>
+          <ion-option>08</ion-option>
+          <ion-option>09</ion-option>
+          <ion-option>10</ion-option>
+          <ion-option>11</ion-option>
+          <ion-option>12</ion-option>
+        </ion-select>
+      </ion-item>
+    </ion-col>
+    <ion-col>
+      <ion-item>
+        <ion-label floating>Year</ion-label>
+        <ion-select><ion-option *ngFor="let x of [17,18,19,20,21,22,23,24,25,26,27,28,29,30]">{{x}}</ion-option></ion-select>
+      </ion-item>
+    </ion-col>
+    <ion-col>
+      <ion-item>
+        <ion-label floating>CVV</ion-label>
+        <ion-input type='password'></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+</ion-content>

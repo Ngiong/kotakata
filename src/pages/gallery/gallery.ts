@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { ImageEditorPage } from '../imageeditor/imageeditor'
 
 @Component({
   selector: 'page-gallery',
@@ -7,11 +8,13 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class GalleryPage {
   photos: any;
+  share: any;
   grids: any;
 
   constructor(public navCtrl: NavController, 
               public navParams: NavParams) {
     this.photos = navParams.get('photos')
+    this.share = navParams.get('share')
 
     this.grids = [];
     let tmp = [];
@@ -37,6 +40,9 @@ export class GalleryPage {
     }
 
     if (url) {
+      this.navCtrl.push(ImageEditorPage, { url: url, share: this.share })
     }
   }
+
+  handleBack() { this.navCtrl.pop() }
 }

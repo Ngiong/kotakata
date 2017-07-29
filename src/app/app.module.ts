@@ -6,6 +6,9 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ExplorePage } from '../pages/explore/explore'
 import { GalleryPage } from '../pages/gallery/gallery'
+import { ImageEditorPage } from '../pages/imageeditor/imageeditor'
+import { ShareCaptionPage } from '../pages/sharecaption/sharecaption'
+import { SaleProductDescPage } from '../pages/saleproductdesc/saleproductdesc'
 import { JournalPage } from '../pages/journal/journal'
 import { ProfilePage } from '../pages/profile/profile'
 import { TabsPage } from '../pages/tabs/tabs';
@@ -21,7 +24,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     JournalPage,
     ProfilePage,
     TabsPage,
-    GalleryPage
+    GalleryPage,
+    ImageEditorPage,
+    ShareCaptionPage,
+    SaleProductDescPage
   ],
   imports: [
     BrowserModule,
@@ -35,7 +41,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     JournalPage,
     ProfilePage,
     TabsPage,
-    GalleryPage
+    GalleryPage,
+    ImageEditorPage,
+    ShareCaptionPage,
+    SaleProductDescPage
   ],
   providers: [
     StatusBar,

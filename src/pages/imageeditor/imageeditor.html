@@ -1,17 +1,21 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Contact
-    </ion-title>
-  </ion-navbar>
+  <ion-toolbar>
+    <ion-row>
+      <ion-col (click)="handleBack()"><ion-icon name="arrow-back" style="font-size: 2em;"></ion-icon></ion-col>
+      <ion-col center text-center><ion-title>IMAGE EDITOR</ion-title></ion-col>
+      <ion-col right text-right (click)="handleNext()">NEXT</ion-col>
+    </ion-row>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
-    <ion-item>
-      <ion-icon name="ionic" item-left></ion-icon>
-      @ionicframework
-    </ion-item>
-  </ion-list>
+  <ion-row>
+    <ion-col>
+      <img src="{{ url }}" />
+    </ion-col>
+  </ion-row>
+  <ion-row>
+  </ion-row>
+  <ion-tabs>
+  </ion-tabs>
 </ion-content>

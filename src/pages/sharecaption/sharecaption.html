@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-row>
+      <ion-col (click)="handleBack()"><ion-icon name="arrow-back" style="font-size: 2em;"></ion-icon></ion-col>
+      <ion-col center text-center><ion-title>CAPTION</ion-title></ion-col>
+      <ion-col right text-right style="color: #CAB95E">SHARE</ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row>
+    <ion-col style="text-align: center; background-color: black;">
+      <img src="{{ url }}" style="width: 60%;" />
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col style="background-color: gainsboro; padding: 1em; 3em;">
+      WRITE CAPTION
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-textarea placeholder="Enter image caption">
+      </ion-textarea>
+    </ion-col>
+  </ion-row>
+</ion-content>
