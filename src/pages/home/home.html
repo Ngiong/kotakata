@@ -1,17 +1,91 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
-  </ion-navbar>
+  <ion-toolbar center text-center>
+    <img src="/assets/logo/kotakata_378.png"
+         style="height: 1.5em" />
+    <ion-icon name="quote" 
+              style="position: absolute; right: 1em; font-size: 1.5em"></ion-icon>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+  <ion-card>
+
+    <ion-item>
+      <ion-row>
+        <ion-avatar item-start>
+          <img src="/assets/img/rebecca.jpg">
+        </ion-avatar>
+        <ion-col>
+          <h2 class="user-name">Lorem ipsum</h2>
+        </ion-col>
+        <ion-col right text-right>
+          <ion-icon name="contact"></ion-icon>
+          <ion-icon name="pin"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </ion-item>
+
+    <img src="/assets/img/item-pic.png">
+
+    <ion-card-content>
+      <ion-row>
+        <ion-col>
+          <ion-row>
+            <div style="display: inline">
+              <img src="/assets/img/heart_inactive.png" style="height: 2em; width: 2em;">
+            </div>
+            <div style="margin-left: 1em; display: inline;">
+              <div class="number">153</div>
+              <div class="number-desc">people adore this</div>
+            </div>
+          </ion-row>
+        </ion-col>
+        <ion-col right text-right>
+          <ion-icon name="chatbubbles" style="color: grey; font-size: 1.5em; margin-right: 0.5em;"></ion-icon>
+          <ion-icon name="quote" style="color: grey; font-size: 1.5em;"></ion-icon>
+        </ion-col>
+      </ion-row>
+      <p>Lorem ipsum</p>
+      <ion-row>
+        <span class="comment">
+          <span class="comment-creator">Bejo</span>
+          Lorem ipsum lalalala
+        </span>
+      </ion-row>
+      <ion-row>
+        <span class="comment">
+          <span class="comment-creator">Painem</span>
+          Lorem ipsum lalalala
+        </span>
+      </ion-row>
+      <ion-row>
+        <span class="comment">
+          <span class="comment-creator">Sulastri</span>
+          Lorem ipsum lalalala
+        </span>
+      </ion-row>
+    </ion-card-content>
+    <!--
+    <ion-row>
+      <ion-col>
+        <button ion-button icon-left clear small>
+          <ion-icon name="thumbs-up"></ion-icon>
+          <div>12 Likes</div>
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button icon-left clear small>
+          <ion-icon name="text"></ion-icon>
+          <div>4 Comments</div>
+        </button>
+      </ion-col>
+      <ion-col center text-center>
+        <ion-note>
+          11h ago
+        </ion-note>
+      </ion-col>
+    </ion-row>
+    -->
+
+</ion-card>
 </ion-content>
