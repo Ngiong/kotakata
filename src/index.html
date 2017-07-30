@@ -41,5 +41,39 @@
   <!-- The main bundle js is generated during the build process -->
   <script src="build/main.js"></script>
 
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+  <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCeo1OrD8YMXaDD51R9HdTK9KJ4-wzenic",
+    authDomain: "kotakatademo.firebaseapp.com",
+    databaseURL: "https://kotakatademo.firebaseio.com",
+    projectId: "kotakatademo",
+    storageBucket: "kotakatademo.appspot.com",
+    messagingSenderId: "877528093829",
+  };
+  firebase.initializeApp(config);
+
+  firebase.auth().signInAnonymously().catch(function(error) {
+    // Handle Errors here.
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    // ...
+  });
+
+  var starCountRef = firebase.database().ref('items_for_sale/');
+  starCountRef.on('value', function(snapshot) {
+    // updateStarCount(postElement, snapshot.val());
+    console.log(snapshot);
+  });
+
+  function writeUserData(itemName, price, seller) {
+    firebase.database().ref('items_for_sale/'+itemName).set({
+      price: price,
+      seller: seller
+    });
+  }
+  </script>
+
 </body>
 </html>

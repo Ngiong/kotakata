@@ -26,7 +26,7 @@ export class ProfilePage {
       { url: '/assets/img/gallery/Picss13.jpg', checked: false },
       { url: '/assets/img/gallery/Picss14.jpg', checked: false },
       { url: '/assets/img/gallery/Picss15.jpg', checked: false }
-    ]  
+    ]
 
     this.grids = [];
     let tmp = [];
